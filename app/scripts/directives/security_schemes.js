@@ -21,7 +21,8 @@
       scope: {
         schemes: '=',
         keychain: '=',
-        baseKey: '='
+        baseKey: '=',
+        anonymous: '='
       }
     };
   };

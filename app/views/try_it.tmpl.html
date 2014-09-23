@@ -2,7 +2,7 @@
   <form>
     <uri-bar base-uri="api.baseUri" path-segments="resource.pathSegments" path-builder="context.pathBuilder"></uri-bar>
 
-    <security-schemes ng-if="apiClient.securitySchemes" schemes="apiClient.securitySchemes" keychain="ramlConsole.keychain" base-key="apiClient.baseKey()"></security-schemes>
+    <security-schemes ng-if="apiClient.securitySchemes" schemes="apiClient.securitySchemes" anonymous="method.allowsAnonymousAccess()" keychain="ramlConsole.keychain" base-key="apiClient.baseKey()"></security-schemes>
     <named-parameters heading="Headers" parameters="context.headers"></named-parameters>
     <named-parameters heading="Query Parameters" parameters="context.queryParameters"></named-parameters>
     <!-- the ng-if below reinstantiates the try it directive which results in the try it

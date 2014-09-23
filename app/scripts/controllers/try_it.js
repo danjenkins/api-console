@@ -127,6 +127,8 @@
       var credentials = this.keychain[this.keychain.selected];
       authStrategy = RAML.Client.AuthStrategies.for(scheme, credentials);
     } catch (e) {
+      console.log('catching the error but not doing anything with it like returning it');
+      return;
       // custom strategies aren't supported yet.
     }
 
