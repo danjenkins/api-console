@@ -3499,10 +3499,6 @@ angular.module('ramlConsoleApp').run(['$templateCache', function($templateCache)
     "    <console-tab role=\"documentation-responses\" heading=\"Responses\"  active='documentation.responsesActive' disabled='!documentation.hasResponseDocumentation()'>\n" +
     "      <responses></responses>\n" +
     "    </console-tab>\n" +
-    "\n" +
-    "    <console-tab role=\"try-it\" heading=\"Try It\" active=\"documentation.tryItActive\" disabled=\"!ramlConsole.tryItEnabled()\">\n" +
-    "      <try-it></try-it>\n" +
-    "    </console-tab>\n" +
     "  </console-tabset>\n" +
     "</section>\n"
   );
